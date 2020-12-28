@@ -57,7 +57,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #E3B873;
+  	color: #E3B873;
 }
 
 .phone-link {
@@ -95,11 +95,12 @@ h1 {
 }
 
 .container_main {
+	display: flex;
 	padding-top: 194px;
 	max-width: 1172px;
 	margin: 0 auto;
 	height: 305px;
-	width: 676px;
+	
 }
 
 .container_overlay	{
@@ -178,4 +179,121 @@ h1 {
 .button2 {
 	padding: 20px 22px;
 	margin-left: 20px;
+}
+
+/*main section 2*/
+
+.section2 {	
+	height: 1074px;
+	background-color: #131313;
+	background-size: cover;
+	color: #E3B873;
+}
+
+.container_section2 {
+	padding-top: 107px;
+}
+
+/*section2 левый div*/
+
+.container_section2 {
+	display: flex;
+	max-width: 1172px;
+	margin: 0 auto;
+}
+
+.section2_description {
+	padding-top: 69px;
+	max-width: 390px;
+	padding-right: 50px;
+}
+
+.section2_description h2 {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	text-transform: uppercase;
+
+	color: #E3B873;
+}
+
+.section2_description p {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+
+	color: #FFFFFF;
+}
+
+.right_collumn {
+	padding-left: 34px;
+}
+
+
+.section2_description h3{
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+
+	color: #E3B873;
+}
+
+.section2_description th{
+	text-align: left;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+
+	color: #FFFFFF;
+}
+
+.slider {
+	margin-top: 80px;
+}
+
+
+/*section2 правый div*/
+
+.section2_links ul{
+	display: flex;
+	list-style: none;
+	padding-inline-start: 0px;
+	margin-bottom: 53px;
+}
+
+.section2_links a{
+	text-decoration: none;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.section2_links li{
+	display: flex;
+	list-style: none;
+	margin-left: 60px;
+}
+
+.section2_links li:first-child {
+	margin-left: 0px;
+}
+
+.section2_links a:hover {
+	color: #E3B873;
+	text-decoration: underline;
 }
