@@ -35,6 +35,7 @@ body {
 	text-transform: uppercase;
 	margin: 0 auto;	
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
 .nav-list {
@@ -164,6 +165,7 @@ h1 {
 	color: #FFFFFF;
 	text-decoration: none;
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .button_title:hover {
@@ -191,16 +193,14 @@ h1 {
 }
 
 .container_section2 {
-	padding-top: 107px;
-}
-
-/*section2 левый div*/
-
-.container_section2 {
 	display: flex;
 	max-width: 1172px;
 	margin: 0 auto;
+	padding-top: 107px;
 }
+
+
+/*section2 левый div*/
 
 .section2_description {
 	padding-top: 69px;
@@ -230,12 +230,9 @@ h1 {
 	color: #FFFFFF;
 }
 
-.right_collumn {
-	padding-left: 34px;
-}
-
 
 .section2_description h3{
+	margin: 0;
 	font-family: Yeseva One;
 	font-style: normal;
 	font-weight: normal;
@@ -246,8 +243,16 @@ h1 {
 	color: #E3B873;
 }
 
-.section2_description th{
+.description_table td {
+	vertical-align: top;
 	text-align: left;
+	padding-bottom: 34px;
+	padding-right: 34px;
+}
+
+.section2_description td{
+	
+	
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
@@ -296,4 +301,230 @@ h1 {
 .section2_links a:hover {
 	color: #E3B873;
 	text-decoration: underline;
+}
+
+/*main section3*/
+
+.section3 {	
+	background-size: cover;
+	margin: 0 auto;
+	background-color: none;
+	height: 1030px;
+	display: flex;
+	justify-content: center;
+}
+
+.container_section3 {
+	margin-top: -324px;
+	max-width: 817px;
+}
+.section3_video {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Первый див с видео внутри */
+
+.container_section3 h3 {
+	text-align: center;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.section3_camera {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	width: 28px;	
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.section3_camera:after {
+	content: '';	
+	width: 32px;
+	height: 1.5px;
+	background: #E3B873;
+	border-radius: 30px;
+	position: absolute;
+	left: 40px; 
+	
+}
+
+.section3_camera:before {
+	content: '';	
+	width: 32px;
+	height: 1.5px;
+	background: #E3B873;
+	border-radius: 30px;
+	position: absolute;
+	right: 35px;
+}
+
+.section3_foto {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+.section3_foto img {
+	margin-top: 34px;	
+}
+
+.play {
+	position: absolute;
+	margin: 0;
+}
+
+/* Второй див с текстом и инпутом внутри */
+.section3_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.section3_text img {
+	margin-top: 62px;
+}
+
+.section3_text p {
+	margin-top: 34px;
+	max-width: 681px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	color: #363636;
+}
+.section3_input {
+	display: flex;
+	justify-content: center;
+}
+
+.section3_input_form {
+	display: flex;
+	max-width: 769px;
+	max-height: 51px;	
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.section3_input_form:nth-child(-n+3) {
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.input_button {
+	height: 51px;
+	width: 200px;
+	background-color: #E3B873;
+	border-radius: 2px;
+	border: 0;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 27px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.new_string {
+	width: 100%;
+}
+
+.input_label {
+	text-align: left;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+
+.input_text {
+	border: 0;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+	width: 230px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+}
+
+.input_checkbox {	
+	opacity: 0;
+	margin-top: 20px;
+	width: 2em;
+	margin-left: auto;
+	margin-right: 1em;
+}
+
+.label_checkbox {
+	margin-right: auto;
+	font-size: 14px;
+	color: #181818;	
+}
+
+.input_checkbox+label {
+	display: inline-flex;
+	align-items: center;
+	margin-top: 20px;	
+}
+
+.input_checkbox+label:before {
+	content: '';	
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	border: 1px solid #adb5bd;
+	border-radius: 1px;
+	margin-right: 1em;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.input_checkbox:checked+label::before {
+	border-radius: 1px;
+	background-color: #E3B873;
+	background-image: url("../images/checked.png");
+}
+
+/*main section3*/
+
+.section4 {
+	background-size: cover;
+	margin: 0 auto;
+	display: flex;	
+	background: none;
+
+	
+
+
+}
+.container_section4 {
+	max-width: 1236px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+}
+
+/*div с заголовком и иконкой*/
+
+.section4_title {
+		
+
 }
