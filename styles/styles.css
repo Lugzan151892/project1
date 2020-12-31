@@ -309,7 +309,7 @@ h1 {
 	background-size: cover;
 	margin: 0 auto;
 	background-color: none;
-	height: 1030px;
+	height: 650px;
 	display: flex;
 	justify-content: center;
 }
@@ -502,29 +502,160 @@ h1 {
 	background-image: url("../images/checked.png");
 }
 
-/*main section3*/
+/*main section4*/
 
 .section4 {
 	background-size: cover;
 	margin: 0 auto;
 	display: flex;	
 	background: none;
-
-	
-
-
+	height: 760px;
 }
 .container_section4 {
 	max-width: 1236px;
 	margin-left: auto;
-	margin-right: auto;
-
-	
+	margin-right: auto;	
 }
 
 /*div с заголовком и иконкой*/
 
 .section4_title {
-		
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+}
+	
+.section4_title h3 {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
 
+	color: #181818;
+}		
+
+.section4_title_SSSR {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+	height: 28px;
+	width: 114px;
+}
+
+.section4_title_SSSR:after {
+	content: '';	
+	width: 32px;
+	height: 1.5px;
+	background: #E3B873;
+	border-radius: 30px;
+	position: absolute;
+	right: 75px;
+	
+}
+
+.section4_title_SSSR:before {
+	content: '';	
+	width: 32px;
+	height: 1.5px;
+	background: #E3B873;
+	border-radius: 30px;
+	position: absolute;
+	left: 75px;
+}
+
+/*main section4 div с примерами*/
+
+.section4_examples {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.examples {
+	width: 392px;
+	height: 608px;
+	margin-left: 30px;
+	margin-top: 30px; 
+}
+.example1_foto {
+	background-image: url("../images/example1.jpg");	
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+.example2_foto {
+	background-image: url("../images/example2.jpg");	
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+.example3_foto {
+	background-image: url("../images/example3.jpg");	
+	height: 100%;
+	background-repeat: no-repeat;
+}
+.example_list {
+	background-color: #FFFFFF;
+	max-width: 330px;
+	margin-top: -314px;
+	margin-left: 31px;
+	margin-right: 31px;
+	height: 286px;
+	text-align: left;
+}
+
+.section4_examples li {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 27px;
+	color: #959595;
+}
+
+.section4_examples h4 {
+	margin: 0;
+	margin-left: 34px;
+	padding-top: 25px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+	text-align: left;
+} 
+
+.section4_examples ul {
+	margin-top: 0;
+} 
+
+.example_price {
+	margin-top: -40px;
+	margin-left: 32px;
+	width: 228px;
+	height: 54px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background: #E3B873;
+	box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.example_price a {
+	text-decoration: none;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
