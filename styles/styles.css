@@ -1185,7 +1185,8 @@ h1 {
 }
 
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 1300px) {
 
 	/*header mobile*/
 
@@ -1207,7 +1208,12 @@ h1 {
 
 	/*section1 mobile*/
 	.container_main {
-		padding-top: 85px;
+		padding-top: 85px;				
+	}
+	.container_main1 {	
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;		
 	}
 
 	.container_main .title {    
@@ -1228,7 +1234,7 @@ h1 {
 		padding: 20px 42px;
 		font-style: italic;
 		margin: 26px 18px 0px 18px;
-		width: 100%;
+		width: 338px;
 	}
 	.section1 {	
 		height: 499px;
@@ -1246,6 +1252,7 @@ h1 {
 	/*section2 mobile*/
 	.container_section2 {
 		padding-top: 0;
+		justify-content: center;
 	}
 	.section2_description {		
 		padding: 0;
@@ -1301,6 +1308,11 @@ h1 {
 
 	/*section3 mobile*/
 
+	.section3 {
+		background: #131313;
+		height: 720px;
+	}
+
 	.container_section3 {    
 	    margin-top: 0px;
 	    background-color: #131313;    
@@ -1325,14 +1337,18 @@ h1 {
 	    color: #FFFFFF;
 	}
 	.section3_input_form:nth-child(-n+3) {
-	    justify-content: center;	    
+	    justify-content: center;
+	    max-width: 340px;	    
 	}
 
 	.input_button {
 		position: absolute;
-    	margin-top: 160px;
+    	margin-top: 230px;
     	width: 340px;
     }
+	.input_label1 {
+		margin-bottom: 60px; 
+	}
 
     .input_label {
     	width: 340px;
@@ -1341,6 +1357,7 @@ h1 {
     .input_text {
     	width: 335px;
     	border: none;
+    	color: #FFFFFF;
     	border-bottom: 1px solid #fff;
     	background: rgba( 0,0,0,.0);
     }
@@ -1392,7 +1409,9 @@ h1 {
 	/*mobile_section mobile*/
 
 	.mobile_section {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
 		max-width: 375px;
 		text-align: center;	
 		z-index: 1;
