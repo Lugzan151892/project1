@@ -7,6 +7,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
 	<title>REPAIR DESIGN PROJECT</title>
+	<meta name="viewport" content="width=device-width initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<header class="header">
@@ -32,7 +33,7 @@
 	</header>
 	<main>
 		<section class="section1">
-			<div class="container_main section1_container">
+			<div class="container_main">
 				<div class="container_main1">
 					<h1 class="title">
 					Turnkey Repair in the<br> city of <span class="span_title">Rostov-on-Don</span>
@@ -40,8 +41,10 @@
 					<p class="text">
 					Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from<br> cost of materials due to the organization of work
 					</p>
-					<button class="button_title button1">calculate the cost</button>
-					<button class="button_title button2">SUBMIT YOUR APPLICATION</button>
+					<div class="s1_buttons">
+						<button class="button_title button1">calculate the cost</button>
+						<button class="button_title button2">SUBMIT YOUR APPLICATION</button>
+					</div>
 				</div>
 			</div>
 			<div class="container_overlay"></div>
@@ -55,15 +58,21 @@
 						market we have made happy more than 1000 families
 						</p>
 					</div>
+					<div class="s2_description_foto">
+						<img class="s2_leftright s2_left" src="./images/s2_left_mobile.png" alt="left">
+						<img src="./images/s2_apartment_mobile.png" alt="apartment foto">
+						<img class="s2_leftright s2_right" src="./images/s2_right_mobile.png" alt="right">
+
+					</div>
 					<div class="description_table">
 						<table>
 							<tr class="first_row">
-								<td><h3>City:</h3>Rostov-on-Don<br> LCD admiral</td>
-								<td><h3>apartment area:</h3>81 m2</td>
+								<td class="s2_left_column"><h3>City:</h3>Rostov-on-Don<br> LCD admiral</td>
+								<td class="s2_right_column"><h3>apartment area:</h3>81 m2</td>
 							</tr>
 							<tr class="second_row">
-								<td><h3>Repair time:</h3>3.5 months</td>
-								<td><h3>Repair Cost:</h3>Upon request</td>
+								<td class="s2_left_column"><h3>Repair time:</h3>3.5 months</td>
+								<td class="s2_right_column"><h3>Repair Cost:</h3>Upon request</td>
 							</tr>
 						</table>
 						<img class="slider" src="./images/slider.png">
@@ -90,7 +99,7 @@
 						</div>
 						<div class="section3_foto">
 							<img class="play" src="./images/play.png" alt="play">
-							<img src="./images/camerafoto.jpg" alt="video">
+							<img class="video_play" src="./images/camerafoto.jpg" alt="video">
 						</div>	
 				</div>
 				
@@ -310,6 +319,14 @@
 				</div>				
 			</div>
 		</section>
+		<section class="mobile_section">
+			<h2>We realize your<br> wildest fantasies</h2>
+			<div class="mobile_section_foto">
+				<img src="./images/mobile_foto.png" alt="example">
+				<img class="mobile_left" src="./images/mobile_left.png" alt="left">
+				<img class="mobile_right" src="./images/mobile_right.png" alt="right">
+			</div>
+		</section>
 		<section class="section7">
 			<div class="s7_black_bg">				
 			</div>
@@ -327,8 +344,8 @@
 								<input id="s7_phone" type="text" value="Your phone number:">
 							</div>
 						</div>							
-						<label for="s7_question">Question</label><br>
-						<input id="s7_question" type="text" value="I want to know:"><br>					
+						<label class="s7_question" for="s7_question">Question</label><br>
+						<input class="s7_question" id="s7_question" type="text" value="I want to know:"><br>					
 						<div class="s7_checkbox">
 							<input class="s7_checkbox_input" id="question" type="checkbox" name="question">
 							<label for="question">I agree to the processing of personal data</label>
@@ -339,12 +356,17 @@
 					</div>
 				</form>
 				<div class="s7_map">
-					<h2>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29</h2>
+					<img class="s7_map_mobile" src="./images/s7_map_mobile.png" alt="map">
+					<h2>Rostov-on-Don, Nansen St., 239 Shopping Center Decorum <br> Tel +7 (928) 768 32 29</h2>
 					<div class="s7_icons">
 						<img src="./images/s7_icon1.png">
 						<img src="./images/s7_icon2.png">
 					</div>
-					<img src="./images/s7_map.png" alt="map">
+					<div class="s7_icons_mobile">
+						<img src="./images/s7_icon1_mobile.png">
+						<img src="./images/s7_icon2_mobile.png">
+					</div>
+					<img class="s7_map_img" src="./images/s7_map.png" alt="map">
 				</div>
 			</div>			
 		</section>

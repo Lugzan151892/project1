@@ -71,9 +71,15 @@ body label {
 	font-size: 11px;
 	line-height: 15px;
 	text-align: right;
+	text-decoration-line: none;
+	color: #FFFFFF;
+	margin-left: 67px;
+}
+
+.phone-link:hover {	
 	text-decoration-line: underline;
 	color: #E3B873;
-	margin-left: 67px;
+	
 }
 
 .container-header, .container-footer {
@@ -93,6 +99,7 @@ h1 {
 }
 
 .section1 {
+	margin: 0 auto;
 	background-image: url("../images/foto.jpg");
 	background-size: cover;
 	height: 707px;
@@ -104,7 +111,8 @@ h1 {
 	max-width: 1172px;
 	margin: 0 auto;
 	height: 305px;
-	
+	position: relative;
+	z-index: 1;
 }
 
 .container_overlay	{
@@ -119,10 +127,7 @@ h1 {
 	height: 707px;
 }
 
-.section1_container {
-	position: relative;
-	z-index: 1;
-}
+
 
 .container_main .title {
 	font-family: Yeseva One;
@@ -150,6 +155,11 @@ h1 {
 	color: #E3B873;
 }
 
+.s1_buttons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .button_title {
 	border: 1px solid #FFFFFF;
 	box-sizing: border-box;
@@ -158,7 +168,6 @@ h1 {
 	padding: 20px 42px;
 	font-size: 11px;
 	line-height: 15px;
-	text-align: center;
 	color: #FFFFFF;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -186,7 +195,8 @@ h1 {
 	height: 1074px;
 	background-color: #131313;
 	background-size: cover;
-	color: #E3B873;
+	color: #E3B873;	
+	z-index: 1;
 }
 
 .container_section2 {
@@ -250,6 +260,13 @@ h1 {
 .slider {
 	margin-top: 80px;
 }
+
+/*section2 div только для мобилки*/
+
+.s2_description_foto {
+	display: none;
+}
+	
 
 
 /*section2 правый div*/
@@ -1153,4 +1170,342 @@ h1 {
 	background-size: cover;
 	background: rgba(0, 0, 0, 0.85); 
 	height: 100%
+}
+
+.mobile_section {
+	display: none;
+}
+
+.s7_map_mobile {
+	display: none;
+}
+
+.s7_icons_mobile {
+	display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+
+	/*header mobile*/
+
+	.nav {
+		display: none;		
+	}
+	.button {
+		display: none;
+	}
+
+	.phone {
+		text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.phone-link {
+		margin-left: auto;
+	}
+
+	/*section1 mobile*/
+	.container_main {
+		padding-top: 85px;
+	}
+
+	.container_main .title {    
+	    font-size: 22px;
+	    line-height: 1.3em;     
+	    margin-left: 18px;
+	}
+
+	.container_main .text {
+		font-size: 14px;
+		line-height: 1,3em;
+		margin-top: 16px;
+		margin-left: 18px;
+		color: #FFFFFF;
+	}
+
+	.button_title {	
+		padding: 20px 42px;
+		font-style: italic;
+		margin: 26px 18px 0px 18px;
+		width: 100%;
+	}
+	.section1 {	
+		height: 499px;
+	}
+	.container_overlay {
+		max-height: 499px;
+	}
+	.section2_foto {
+		display: none;
+	}
+	.slider {
+		display: none;
+	}
+
+	/*section2 mobile*/
+	.container_section2 {
+		padding-top: 0;
+	}
+	.section2_description {		
+		padding: 0;
+	}
+
+	.description_text {
+		text-align: center;
+    	margin-left: 32px;
+    	margin-right: 32px;
+    	font-size: 11px;
+    	line-height: 1.5em;
+	}
+	.s2_right_column {
+		padding-right: 0;
+	}
+	.description_table table {
+		margin: 0 auto;
+	}
+	.description_table h3 {
+		font-size: 14px;
+		line-height: 1.3em;
+	}
+
+	.description_table td {		
+		font-size: 11px;
+		line-height: 1.3em;
+	}
+	.s2_left_column {
+		padding-right: 61px;
+	}
+	.s2_description_foto {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 36px;
+	}
+	.s2_leftright {
+		top: 105px;
+		max-width: 36px;
+		max-height: 36px;
+		position: absolute;
+	}
+	.s2_left {	
+		left: 30px;
+	}
+	.s2_right {	
+		right: 30px;
+	}
+	.section2 {
+		max-height: 669px;
+	}
+
+	/*section3 mobile*/
+
+	.container_section3 {    
+	    margin-top: 0px;
+	    background-color: #131313;    
+	}
+	.video_play {
+		max-width: 340px;
+	}
+
+	.play {
+		max-width: 60px;
+	}
+
+	.section3_text img {
+    	margin-top: 28px;
+	}
+
+	.section3_text p {
+	    max-width: 340px;
+	    margin-top: 21px;	    
+	    font-size: 11px;
+	    line-height: 1.7em;
+	    color: #FFFFFF;
+	}
+	.section3_input_form:nth-child(-n+3) {
+	    justify-content: center;	    
+	}
+
+	.input_button {
+		position: absolute;
+    	margin-top: 160px;
+    	width: 340px;
+    }
+
+    .input_label {
+    	width: 340px;
+    }
+
+    .input_text {
+    	width: 335px;
+    	border: none;
+    	border-bottom: 1px solid #fff;
+    	background: rgba( 0,0,0,.0);
+    }
+
+    .label_checkbox {
+    	color: #FFFFFF;
+    	margin-right: 0;
+    }
+    .input_checkbox {
+    	display: none;
+    }
+
+    .input_checkbox+label {
+    	margin-left: -50px;
+	}
+
+	/*section4 mobile*/
+	.section4 {
+		height: auto;
+	}
+
+	.section4_title {
+		margin-top: 80px;
+	}
+
+	.section4_examples {
+    	display: flex;
+    	flex-wrap: wrap;
+    	max-width: 340px;
+	}
+
+	.examples {
+		margin-left: 0;
+	}
+
+	.example_list {
+		margin-left: 0;
+	}
+
+	/*section 5-6 mobile*/
+
+	.section5 {
+		display: none;
+	}	
+	.section6 {
+		display: none;
+	}	
+
+	/*mobile_section mobile*/
+
+	.mobile_section {
+		display: block;
+		max-width: 375px;
+		text-align: center;	
+		z-index: 1;
+	}
+
+	.mobile_section h2 { 
+		font-family: Yeseva One;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		line-height: 1.3em;		
+		text-transform: uppercase;
+
+		color: #E3B873;
+	}
+
+	.mobile_section_foto {
+		position: relative;
+		margin-bottom: -150;
+	}
+
+	.mobile_left {
+		position: absolute;
+		top: 90px;
+		left: 10px;
+	}
+	.mobile_right {
+		position: absolute;
+		top: 90px;
+		right: 10px;
+	}
+
+	/*section 7 mobile*/
+
+	.s7_black_bg {
+		display: none;
+	}
+	.container_section7 {
+		margin-top: 0;
+	}
+
+	.section7 {
+	    background-color: #131313;
+	    z-index: -1;
+	    background-image: none;
+	    margin-top: -125px;
+	    padding-top: 125px;
+    }
+
+    .section7_form {
+    	top: 0;
+    	position: static;
+    	height: auto;
+    	width: auto;
+    } 
+    .s7_name_phone {	    
+	    display: flex;
+	    justify-content: start;
+	    flex-wrap: wrap;
+	    margin-left: 18px;
+	}
+
+	.s7_phone {
+		margin-top: 63px;
+	}
+
+	.s7_question {
+		margin-left: 18px;
+		max-width: 340px;
+	}
+	.s7_name_phone input {
+		width: 340px;
+	}
+
+	.s7_checkbox {
+		justify-content: start;
+	}
+
+	.s7_submit {
+		width: 340px;		
+	}
+
+	.s7_map_img {
+		display: none;
+	}
+
+	.s7_map_mobile {
+		display: block;
+	}
+
+	.s7_map {
+		margin-left: 18px;
+		margin-right: 18px;
+	    padding-top: 46px;
+	}
+
+	.s7_map h2 {
+		font-size: 18px;
+		line-height: 1.3em;
+	}
+
+	.s7_icons {
+		display: none;
+	}
+
+	.s7_icons_mobile {
+		width: 100px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: 9px;
+	}
+
+	footer {
+		display: none;
+	}
 }
